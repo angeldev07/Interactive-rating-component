@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <main>
+    
+    <section class="container">
+
+      <figure class="rated-head-star">
+        <img src="images/icon-star.svg" alt="icon-star" class="star">
+      </figure>
+      <div class="rated-texts">
+        <h1 class="title"> How did we do?</h1>
+        <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+        <div class="rated-values-container">
+          <div class="rated-value">
+            <input type="radio" name="radio" id="1" class="radioValue">  
+            <label for="radio" class="number">1</label>
+          </div>
+          <div class="rated-value">
+            <input type="radio" name="radio" id="2" class="radioValue">  
+            <label for="radio" class="number">2</label>
+          </div>
+          <div class="rated-value">
+            <input type="radio" name="radio" id="3" class="radioValue">  
+            <label for="radio" class="number">3</label>
+          </div>
+          <div class="rated-value">
+            <input type="radio" name="radio" id="4" class="radioValue">  
+            <label for="radio" class="number">4</label>
+          </div>
+          <div class="rated-value">
+            <input type="radio" name="radio" id="5" class="radioValue">  
+            <label for="radio" class="number">5</label>
+          </div>
+        </div>
+        <span class="submit">submit</span>
+      </div>
+
+    </section>
+
+    
+    <section class="container container-after">
+      <div class="thank-head">
+        <figure class="rated-head ">
+          <img src="images/illustration-thank-you.svg" alt="thank-you" class="thank-icon">
+        </figure>
+        <div class="answer"><p>You selected <span id="add"></span> out of 5</p></div>
+      </div>
+      <div class="rated-texts">
+        <h2 class="title">Thank you!</h2>
+        <p class="paragraph">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
